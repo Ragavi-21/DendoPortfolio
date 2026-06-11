@@ -11,7 +11,7 @@ import Internship from "./components/Internship";
 import Foundation from "./components/Foundation";
 import Contact from "./components/Contact";
 import Terms from "./components/Terms";
-import PrivacyPolicy from "./components/Privacypolicy";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function AppContent() {
   const location = useLocation();
