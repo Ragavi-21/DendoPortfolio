@@ -1,0 +1,211 @@
+/* Internship.css */
+
+.internship-page {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+/* Hero Section (Alternative Centered Layout) */
+.intern-hero-alt {
+  width: 100%;
+  padding: 120px 8% 80px;
+  background: #000a20; /* Very dark blue, almost black */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  text-align: center;
+}
+
+.intern-hero-content-alt {
+  max-width: 900px;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intern-title-alt {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 30px;
+}
+
+.text-highlight {
+  color: #6da2ff; /* Nice professional blue highlight */
+}
+
+.intern-description-alt {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+
+
+
+/* Students Section */
+.students-section {
+  padding: 100px 8%;
+  background: #f8f9fc;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #001b63;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #5c6784;
+}
+
+.students-display {
+  display: flex;
+  justify-content: center;
+}
+
+.students-image-container {
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 27, 99, 0.15);
+}
+
+.students-group-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.8s ease;
+}
+
+.students-image-container:hover .students-group-photo {
+  transform: scale(1.05);
+}
+
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 27, 99, 0.8));
+  padding: 40px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+}
+
+.photo-overlay span {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* CEO Section */
+.ceo-section {
+  padding: 120px 8%;
+  background: #ffffff;
+}
+
+.ceo-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ceo-image-wrapper {
+  flex: 1;
+}
+
+.ceo-image-wrapper img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 20px 20px 0px #001b63;
+}
+
+.ceo-text {
+  flex: 1.2;
+}
+
+.ceo-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #001b63;
+  margin-bottom: 25px;
+}
+
+.ceo-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.ceo-perks {
+  list-style: none;
+  padding: 0;
+}
+
+.ceo-perks li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #001b63;
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.ceo-perks li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #001b63;
+  font-weight: 900;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .intern-title-alt { font-size: 3.5rem; }
+  .ceo-content { flex-direction: column; text-align: center; }
+  .ceo-perks li { display: inline-block; margin: 10px; }
+}
+
+@media (max-width: 768px) {
+  .intern-hero-alt { padding: 80px 5% 40px; }
+  .intern-title-alt { font-size: 2.4rem; }
+  .intern-description-alt { font-size: 1.1rem; line-height: 1.6; margin-bottom: 40px; }
+  
+  .ceo-section { padding: 60px 5%; }
+  .ceo-title { font-size: 2.2rem; }
+  .ceo-description { font-size: 1rem; }
+  .ceo-perks li { display: block; text-align: left; margin: 10px auto; max-width: 280px; }
+  
+  .students-section { padding: 60px 5%; }
+  .section-title { font-size: 2rem; }
+  .section-subtitle { font-size: 0.95rem; }
+  .photo-overlay { padding: 20px; }
+  .photo-overlay span { font-size: 1.4rem; }
+}
+
+@media (max-width: 480px) {
+  .intern-title-alt { font-size: 1.8rem; }
+  .ceo-title { font-size: 1.8rem; }
+  .ceo-image-wrapper img { box-shadow: 10px 10px 0px #001b63; }
+}

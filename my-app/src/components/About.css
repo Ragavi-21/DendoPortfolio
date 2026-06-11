@@ -1,0 +1,388 @@
+/* =================== ABOUT SECTION =================== */
+
+.about-section {
+  width: 100%;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+}
+
+/* ===================================================== */
+/* =================== HERO SECTION ==================== */
+/* ===================================================== */
+
+.about-hero {
+  width: 100%;
+  height: 880px;
+  background: #001a5c;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 90px;
+}
+
+/* ================= LEFT CONTENT ================= */
+
+.about-hero-left {
+  width: 42%;
+  position: relative;
+  z-index: 5;
+}
+
+.about-hero-title {
+  color: #ffffff;
+
+  font-size: 66px;
+  font-weight: 800;
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+
+  margin-bottom: 40px;
+
+  max-width: 650px;
+}
+
+.about-story {
+  color: rgba(255,255,255,0.92);
+
+  font-size: 22px;
+  line-height: 2;
+
+  font-weight: 400;
+
+  max-width: 600px;
+}
+
+/* ================= RIGHT IMAGE ================= */
+
+.about-hero-right {
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  bottom: 0px;
+  width: calc(58% - 30px);
+}
+
+/* CURVED IMAGE SHAPE */
+
+.about-hero-circle {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  border-top-left-radius: 420px;
+}
+
+/* IMAGE */
+
+.about-hero-circle img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+}
+
+/* ================= QUOTE BOX ================= */
+
+.about-quote-box {
+  position: absolute;
+
+  left: 0;
+  bottom: 90px;
+  transform: translateX(-50%);
+
+  width: 420px;
+
+  background: #032d73;
+
+  padding: 38px 44px;
+
+  z-index: 20;
+}
+
+.about-quote-box p {
+  color: #ffffff;
+
+  font-size: 22px;
+  line-height: 1.7;
+
+  font-style: italic;
+  font-weight: 600;
+
+  margin: 0;
+}
+
+/* =================== MISSION & VISION =================== */
+
+.about-mv-section {
+  padding: 100px 5%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.about-mv-card {
+  flex: 1;
+  background: #001A41;
+  color: #ffffff;
+  padding: 60px 45px 50px;
+  border-radius: 24px;
+  text-align: center;
+  position: relative;
+  max-width: 550px;
+}
+
+.about-mv-icon {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  background: #001A41;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-mv-icon svg {
+  width: 35px;
+  height: 35px;
+}
+
+.about-mv-card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.about-mv-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* =================== BUILT FOR FAST... =================== */
+
+.about-stats-section {
+  background: #001A41;
+  padding: 120px 5%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.about-stats-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 80px;
+}
+
+.about-stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-stat-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05); /* Dark card with subtle overlay */
+  padding: 60px 40px;
+  border-radius: 24px;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-stat-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.about-stat-icon {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.about-stat-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.about-stat-number {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.about-stat-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1.5px;
+}
+
+/* =================== RESPONSIVE =================== */
+
+@media (max-width: 1200px) {
+  .about-hero {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 5% 60px;
+  }
+  
+  .about-hero-left {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 50px;
+  }
+  
+  .about-hero-title {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+
+  .about-story {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .about-hero-right {
+    position: relative;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+    height: 480px;
+    margin-top: 0;
+  }
+
+  .about-hero-circle {
+    border-top-left-radius: 180px;
+  }
+  
+  .about-quote-box {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    margin: -60px auto 40px;
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .about-quote-box p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .about-mv-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 80px 5% 50px;
+  }
+  
+  .about-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .about-hero-right {
+    height: 320px;
+  }
+
+  .about-hero-circle {
+    border-top-left-radius: 100px;
+  }
+
+  .about-quote-box {
+    margin-top: -40px;
+  }
+
+  .about-stats-grid {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .about-stats-title {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+
+  .about-mv-card {
+    padding: 50px 24px 40px;
+  }
+
+  .about-mv-card h3 {
+    font-size: 22px;
+  }
+}
+/* =================== BUILT FOR FAST... =================== */
+
+.about-stats-section {
+  background: #001A41;
+  padding: 120px 5% 220px;
+  text-align: center;
+  margin-top: 60px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* CURVED WHITE SHAPE */
+
+.about-stats-section::after {
+  content: "";
+
+  position: absolute;
+
+  left: -5%;
+  bottom: -140px;
+
+  width: 110%;
+  height: 260px;
+
+  background: #ffffff;
+
+  border-radius: 0 0 50% 50%;
+}

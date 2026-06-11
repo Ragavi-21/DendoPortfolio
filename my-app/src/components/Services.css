@@ -1,0 +1,329 @@
+/* ================= SERVICES SECTION ================= */
+
+.services-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 110px 0;
+  overflow: hidden;
+}
+
+/* ================= HEADER ================= */
+
+.services-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.services-main-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #001a4d;
+  margin-bottom: 16px;
+}
+
+.services-subtitle {
+  font-size: 1.15rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ================= CAROUSEL ================= */
+
+.services-carousel-container {
+  width: 100%;
+  height: 650px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  perspective: 1800px;
+}
+
+.services-carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+/* ================= CARD ================= */
+
+.service-card {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 340px;
+  height: 440px;
+
+  background: #001845;
+
+  padding: 40px 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  cursor: pointer;
+
+  border-radius: 18px;
+
+  transition:
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.8s ease,
+    filter 0.8s ease,
+    z-index 0.8s;
+
+  /* 3D COVERFLOW EFFECT */
+
+  transform:
+    translate(-50%, -50%)
+    rotateY(calc(var(--position) * -18deg))
+    translateX(calc(var(--position) * 240px))
+    translateZ(calc(var(--abs-position) * -120px))
+    scale(calc(1 - (var(--abs-position) * 0.12)));
+
+  opacity: calc(1 - (var(--abs-position) * 0.18));
+
+  z-index: calc(20 - var(--abs-position));
+
+  filter: brightness(calc(1 - (var(--abs-position) * 0.12)));
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* ================= ACTIVE CARD ================= */
+
+.service-card.active {
+  transform:
+    translate(-50%, -50%)
+    rotateY(0deg)
+    translateX(0)
+    translateZ(120px)
+    scale(1.08);
+
+  opacity: 1;
+
+  z-index: 50;
+
+  filter: brightness(1);
+
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.3);
+}
+
+/* ================= LOGO CIRCLE ================= */
+
+.card-logo-wrapper {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  border: 4px solid #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 36px;
+
+  background: transparent;
+
+  transition: transform 0.5s ease;
+}
+
+.service-card.active .card-logo-wrapper {
+  transform: scale(1.08);
+}
+
+/* ================= LOGO IMAGE ================= */
+
+.card-logo {
+  width: 68%;
+  height: 68%;
+  object-fit: contain;
+}
+
+/* ================= TEXT LOGO ================= */
+
+.card-logo-text {
+  color: white;
+  font-weight: 800;
+}
+
+.nexa-logo-small {
+  font-size: 2.3rem;
+}
+
+.zen-logo-small {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* ================= CONTENT ================= */
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.35;
+
+  color: white;
+
+  margin-bottom: 24px;
+}
+
+.card-description {
+  font-size: 1.05rem;
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* ================= FEATURES ================= */
+
+.features-section {
+  width: 100%;
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 0 30px;
+}
+
+.features-image-wrapper {
+  width: 100%;
+  max-width: 1500px;
+}
+
+.features-image {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+  .services-main-title {
+    font-size: 2.7rem;
+  }
+
+  .services-carousel-container {
+    height: 560px;
+  }
+
+  .service-card {
+    width: 290px;
+    height: 390px;
+
+    transform:
+      translate(-50%, -50%)
+      rotateY(calc(var(--position) * -15deg))
+      translateX(calc(var(--position) * 180px))
+      translateZ(calc(var(--abs-position) * -100px))
+      scale(calc(1 - (var(--abs-position) * 0.1)));
+  }
+
+  .service-card.active {
+    transform:
+      translate(-50%, -50%)
+      rotateY(0deg)
+      translateX(0)
+      translateZ(100px)
+      scale(1.05);
+  }
+
+  .card-title {
+    font-size: 1.7rem;
+  }
+
+  .card-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .services-section {
+    padding: 70px 0;
+  }
+
+  .services-header {
+    margin-bottom: 50px;
+  }
+
+  .services-main-title {
+    font-size: 2rem;
+  }
+
+  .services-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .services-carousel-container {
+    height: 470px;
+    perspective: 1200px;
+  }
+
+  .service-card {
+    width: 220px;
+    height: 300px;
+
+    padding: 24px 18px;
+
+    transform:
+      translate(-50%, -50%)
+      rotateY(calc(var(--position) * -12deg))
+      translateX(calc(var(--position) * 105px))
+      translateZ(calc(var(--abs-position) * -80px))
+      scale(calc(1 - (var(--abs-position) * 0.08)));
+  }
+
+  .service-card.active {
+    transform:
+      translate(-50%, -50%)
+      rotateY(0deg)
+      translateX(0)
+      translateZ(80px)
+      scale(1.03);
+  }
+
+  .card-logo-wrapper {
+    width: 70px;
+    height: 70px;
+
+    margin-bottom: 22px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+  }
+
+  .card-description {
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+
+  .features-section {
+    margin-top: 70px;
+    padding: 0 12px;
+  }
+}
