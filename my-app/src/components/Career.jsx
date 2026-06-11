@@ -3,7 +3,7 @@
   import React, { useState } from "react";
   import "./Career.css";
 
-  import heroImg from "../assets/career-hero.png";
+  import heroImg from "../assets/Career-hero.png";
 
   const Career = () => {
     const [formData, setFormData] = useState({
