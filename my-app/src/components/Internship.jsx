@@ -32,13 +32,8 @@ const Internship = () => {
             <h2 className="ceo-title">MUNIYAPPAN EDUMBAN
 </h2>
             <p className="ceo-description">
-              We don't just hire interns; we cultivate future leaders. Our "Next CEO" initiative identifies high-potential individuals and provides them with direct mentorship from our executive team, preparing them to lead the industry.
-            </p>
-            <ul className="ceo-perks">
-              <li>Direct Executive Mentorship</li>
-              <li>Leadership Workshops</li>
-              <li>Strategic Project Ownership</li>
-            </ul>
+              Muniyappan Edumban is the Founder & CEO of DENDO. He leads the company's vision of building a next-generation hyperlocal commerce ecosystem that empowers local businesses and brings technology-driven convenience to emerging cities across India. With expertise in software development and product strategy, he is committed to driving innovation, growth, and community impact.
+</p>
           </div>
         </div>
       </section>
