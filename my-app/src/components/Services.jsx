@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Services.css";
 
 // ASSETS
-import dendoLogo from "../assets/dendoo.png";
-import cravixLogo from "../assets/Cravix.png";
-import quickLogo from "../assets/Dendo quick.png";
-import featuresImg from "../assets/features.png";
-import nexaImg from "../assets/Nexaride.png";
+import dendoLogo from "../assets/dendoo.jpg";
+import cravixLogo from "../assets/Cravix.jpg";
+import quickLogo from "../assets/Dendo quick.jpg";
+import featuresImg from "../assets/features.jpg";
+import nexaImg from "../assets/Nexaride.jpg";
 
 const services = [
   {

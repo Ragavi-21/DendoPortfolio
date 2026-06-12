@@ -1,8 +1,8 @@
 import React from "react";
 import "./Internship.css";
 
-import heroImg from "../assets/student-coding.png";
-import studentsImg from "../assets/groupphoto.png";
+import heroImg from "../assets/student-coding.jpg";
+import studentsImg from "../assets/groupphoto.jpg";
 import ceoImg from "../assets/ceo.jpg";
 
 const Internship = () => {

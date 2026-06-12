@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import logoImg from "../assets/logo.png";
+import logoImg from "../assets/logo.jpg";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);

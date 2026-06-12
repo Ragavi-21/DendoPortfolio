@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Terms.css";
-import logoImg from "../assets/dendo.png";
+import logoImg from "../assets/dendo.jpg";
 
 const Terms = () => {
   return (

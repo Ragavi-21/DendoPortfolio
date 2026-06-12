@@ -1,7 +1,7 @@
 // About.jsx
 import React from "react";
 import "./About.css";
-import heroImg from "../assets/about-hero.png";
+import heroImg from "../assets/about-hero.jpg";
 
 const About = () => {
   return (

@@ -2,11 +2,11 @@
 import React, { useEffect } from "react";
 import "./Product.css";
 
-import cityImg from "../assets/product-hero.png";
-import logoImg from "../assets/dendoo.png";
-import quickImg from "../assets/Dendo quick.png";
-import cravixImg from "../assets/Cravix.png";
-import NexaImg from "../assets/Nexaride.png";
+import cityImg from "../assets/product-hero.jpg";
+import logoImg from "../assets/dendoo.jpg";
+import quickImg from "../assets/Dendo quick.jpg";
+import cravixImg from "../assets/Cravix.jpg";
+import NexaImg from "../assets/Nexaride.jpg";
 
 const Product = () => {
   useEffect(() => {

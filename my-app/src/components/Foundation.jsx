@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Foundation.css";
 
-import foundationLogo from "../assets/foundation-logo.png";
-import heroImg from "../assets/foundation-hero.png";
+import foundationLogo from "../assets/foundation-logo.jpg";
+import heroImg from "../assets/foundation-hero.jpg";
 
 const Foundation = () => {
   const [formData, setFormData] = useState({
