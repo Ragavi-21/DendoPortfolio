@@ -31,7 +31,7 @@ const Foundation = () => {
     setStatus({ loading: true, success: false, error: null });
 
     try {
-      const response = await fetch("http://localhost:5000/api/foundation", {
+      const response = await fetch("/api/foundation", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
