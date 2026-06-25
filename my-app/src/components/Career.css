@@ -63,7 +63,9 @@
 
 .career-image-card {
   width: 520px;
-  height: 350px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 520 / 350;
 
   background: #02133d;
   border-radius: 24px;
@@ -373,7 +375,8 @@
   .career-image-card {
     width: 100%;
     max-width: 360px;
-    height: 240px;
+    height: auto;
+    aspect-ratio: 520 / 350;
   }
 
   .why-section {

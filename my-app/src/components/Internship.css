@@ -85,12 +85,14 @@
   border-radius: 40px;
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0, 27, 99, 0.15);
-  height: 650px;
+  aspect-ratio: 1100 / 650;
+  height: auto;
 }
 
 .students-group-photo {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
   transition: transform 0.8s ease;
 }
@@ -136,8 +138,11 @@
 }
 
 .ceo-image-wrapper img {
-  width: 450px;
-  height: 550px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  aspect-ratio: 450 / 550;
+  object-fit: cover;
   border-radius: 30px;
   box-shadow: 20px 20px 0px #001b63;
 }
@@ -186,6 +191,10 @@
 @media (max-width: 1024px) {
   .intern-title-alt { font-size: 3.5rem; }
   .ceo-content { flex-direction: column; text-align: center; }
+  .ceo-image-wrapper img {
+    margin: 0 auto 40px;
+    display: block;
+  }
   .ceo-perks li { display: inline-block; margin: 10px; }
 }
 
@@ -200,6 +209,7 @@
   .ceo-perks li { display: block; text-align: left; margin: 10px auto; max-width: 280px; }
   
   .students-section { padding: 60px 5%; }
+  .students-image-container { border-radius: 20px; }
   .section-title { font-size: 2rem; }
   .section-subtitle { font-size: 0.95rem; }
   .photo-overlay { padding: 20px; }

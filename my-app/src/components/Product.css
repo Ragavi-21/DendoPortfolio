@@ -170,8 +170,9 @@
 /* BIGGER FIRST 3 LOGOS */
 
 .big-logo {
-  width: 800%;
-  height:8000%;
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
 }
 
 /* CRAVIX */
